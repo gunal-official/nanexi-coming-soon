@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { FaLinkedin, FaXTwitter, FaInstagram, FaGithub, FaFacebook, FaYoutube } from "react-icons/fa6";
 
 export default function ComingSoon() {
   return (
@@ -63,12 +64,72 @@ export default function ComingSoon() {
             Coming Soon
           </span>
         </div>
+        {/* Social Media */}
+        <div className="mt-12 flex justify-center gap-6">
+          <a
+            href="https://www.linkedin.com/company/nanexi"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI LinkedIn"
+            className="text-gray-400 hover:text-white transition text-xl"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://x.com/nanexi_tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI Twitter"
+            className="text-gray-400 hover:text-white transition text-xl"
+          >
+            <FaXTwitter />
+          </a>
+
+          <a
+            href="https://www.instagram.com/nanexi.tech/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI Instagram"
+            className="text-gray-400 hover:text-white transition text-xl"
+          >
+            <FaInstagram />
+          </a>
+
+          <a
+            href="https://www.facebook.com/nanexi.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI Facebook"
+            className="text-gray-400 hover:text-white transition text-xl"
+          >
+            <FaFacebook />
+          </a>
+
+          <a
+            href="https://github.com/NANEXI"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI GitHub"
+            className="text-gray-400 hover:text-white transition text-xl"
+          >
+            <FaGithub />
+          </a>
+
+          <a href="https://www.youtube.com/@Nanexi-Tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NANEXI YouTube"
+            className="text-gray-400 hover:text-white transition text-xl">
+            <FaYoutube />
+          </a>
+        </div>
 
         {/* Footer */}
         <p className="mt-16 text-sm text-gray-500">
           © {new Date().getFullYear()} NANEXI. All rights reserved.
         </p>
       </motion.div>
-    </main>
+    </main >
   );
 }
