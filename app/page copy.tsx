@@ -11,42 +11,37 @@ export default function ComingSoon() {
         transition={{ duration: 0.8 }}
         className="max-w-3xl text-center"
       >
-        {/* Logo (Visual only) */}
-        <div className="flex justify-center mb-4">
+        {/* Logo / Brand */}
+        <h1 className="text-4xl md:text-6xl font-semibold tracking-widest">
+
+        </h1>
+        {/* Logo / Brand */}
+        <div className="flex justify-center">
           <Image
             src="/Logos.png"
-            alt="NANEXI Software Development Company Logo"
+            alt="NANEXI Logo"
             width={420}
             height={80}
-            priority
           />
         </div>
-
-        {/* H1 — SEO Heading */}
-        <h1 className="sr-only">
-          NANEXI — Where Data Meets Intelligence
-        </h1>
-
-        {/* Tagline */}
-        <h2 className="text-lg md:text-xl text-gray-300">
+        <p className="mt-4 text-lg md:text-xl text-gray-300">
           Where Data Meets Intelligence 🤖
-        </h2>
+        </p>
 
         {/* Divider */}
         <div className="mt-10 h-px w-full bg-gradient-to-r from-transparent via-white/30 to-transparent" />
 
-        {/* Secondary Heading */}
-        <h3 className="mt-10 text-2xl md:text-3xl font-light tracking-wide">
+        {/* Coming Soon Text */}
+        <h2 className="mt-10 text-2xl md:text-3xl font-light tracking-wide">
           We’re Building Something Powerful
-        </h3>
+        </h2>
 
-        {/* SEO Content */}
         <p className="mt-4 text-gray-400 leading-relaxed">
-          NANEXI is a next-generation software development company specializing in
-          intelligent systems, scalable web applications, and future-ready
-          digital solutions for global businesses.
+          NANEXI is a next-generation software development company focused on
+          intelligent systems, scalable technology, and future-ready solutions.
+
           <br /><br />
-          Our platform is currently under development as we prepare a premium
+          Our platform is currently under development. We’re preparing an
           experience where precision meets innovation.
         </p>
 
