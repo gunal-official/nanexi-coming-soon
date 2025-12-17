@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function ComingSoon() {
   return (
@@ -12,9 +13,17 @@ export default function ComingSoon() {
       >
         {/* Logo / Brand */}
         <h1 className="text-4xl md:text-6xl font-semibold tracking-widest">
-          NANEXI
-        </h1>
 
+        </h1>
+        {/* Logo / Brand */}
+        <div className="flex justify-center">
+          <Image
+            src="/Logos.png"
+            alt="NANEXI Logo"
+            width={420}
+            height={80}
+          />
+        </div>
         <p className="mt-4 text-lg md:text-xl text-gray-300">
           Where Data Meets Intelligence 🤖
         </p>
