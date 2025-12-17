@@ -14,7 +14,7 @@ export default function ComingSoon() {
         {/* Logo (Visual only) */}
         <div className="flex justify-center mb-4">
           <Image
-            src="/Logos.png"
+            src="/logos.png"
             alt="NANEXI Software Development Company Logo"
             width={420}
             height={80}
