@@ -12,6 +12,8 @@ import {
 } from "../../components/ui/resizable-navbar";
 import { useState } from "react";
 
+
+// Navbar page : where data updatred
 export function NavbarPage() {
   const navItems = [
     {
