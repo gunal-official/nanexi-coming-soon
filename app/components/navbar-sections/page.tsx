@@ -9,25 +9,20 @@ import {
   MobileNavHeader,
   MobileNavToggle,
   MobileNavMenu,
-} from "../../components/ui/resizable-navbar";
+} from "../ui/resizable-navbar/resizable-navbar";
 import { useState } from "react";
 
-
-// Navbar page : where data updatred
-export function NavbarPage() {
+export default  function NavbarDemo() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "About Us",
+      link: "about",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Career",
+      link: "careers",
     },
-    {
-      name: "Contact",
-      link: "#contact",
-    },
+    
   ];
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -88,8 +83,9 @@ export function NavbarPage() {
           </MobileNavMenu>
         </MobileNav>
       </Navbar>
-      {/* Other sections */}
+
       {/* Navbar */}
     </div>
   );
 }
+ 
