@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function Home() {
+export default function ComingSoon() {
   return (
     <main className="min-h-screen bg-black text-white flex items-center justify-center px-6">
       <motion.div
