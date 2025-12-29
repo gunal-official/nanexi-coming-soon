@@ -11,10 +11,18 @@ export default function ComingSoon() {
         transition={{ duration: 0.8 }}
         className="max-w-3xl text-center"
       >
+          <div className="flex justify-center mb-0">
+            <img
+              src="/logo.png"
+              alt="NANEXI Logo"
+              width={320}
+              height={90}
+            />
+          </div>
         {/* Logo / Brand */}
-        <h1 className="text-4xl md:text-6xl font-semibold tracking-widest">
+        {/* <h1 className="text-4xl md:text-6xl font-semibold tracking-widest">
           NANEXI
-        </h1>
+        </h1> */}
 
         <p className="mt-4 text-lg md:text-xl text-gray-300">
           Where Data Meets Intelligence 🤖
@@ -52,7 +60,7 @@ export default function ComingSoon() {
         </div>
 
         {/* Footer */}
-        <p className="mt-16 text-sm text-gray-500">
+        <p className="mt-16 mb-10 text-sm text-gray-500">
           © {new Date().getFullYear()} NANEXI. All rights reserved.
         </p>
       </motion.div>
