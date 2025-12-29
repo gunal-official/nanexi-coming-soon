@@ -1,17 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
-import { NavbarPage } from "./pages/navbar/page";
+import Footer from "./components/Footer/footer";
+import Header from "./components/Header/header";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+/* ---------------- Fonts ---------------- */
+
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["400", "600", "700"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const firaCode = Fira_Code({
   subsets: ["latin"],
+  variable: "--font-fira",
+  weight: ["400"],
+  display: "swap",
 });
+
+/* ---------------- Metadata ---------------- */
 
 export const metadata: Metadata = {
   title: {
@@ -55,6 +64,8 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://nanexi.com"),
 };
 
+/* ---------------- Layout ---------------- */
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -63,10 +74,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} ${firaCode.variable} antialiased bg-black text-white`}
       >
-         <NavbarPage/>
+        {/* <Header /> */}
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
